@@ -1,0 +1,36 @@
+{% load static %} 
+<div class="container-fluid p-3 text-center" style="background: #380e64">
+        <div class="row">
+          <div class="col-sm-12 col-lg-6 mt-5 mb-2 text-white" style=" font-family: Rubik;">
+            <img src="{% static 'imagenes/imagen_footer.png' %}" alt="logo_footer" width="250rem"">
+            <h5 style="font-size: 20px;">En nuestra tienda encontrarás exquisitos flanes preparadas con los mejores ingredientes, pero sobre todo hechos con mucho cariño.</h5>
+            <div class="container col-sm-12 col-lg-6 text-center mb-5">
+              <a href="https://www.instagram.com/" target="_blank">
+                <i class="fab fa-instagram-square fa-2x m-2"  style="color: #c281e3;"></i>
+              <a href="https://twitter.com/?lang=es" target="_blank">
+                  <i class="fab fa-twitter-square fa-2x m-2" style="color: #c281e3;"></i></a>
+              <a href="https://www.facebook.com/" target="_blank">
+                  <i class="fab fa-facebook-square fa-2x m-2" style="color: #c281e3;"></i>
+                </a>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-6 text-center mb-3 mt-5">
+            <h5 class="text-white text-center" style="font-family: Rubik; font-size: 30px;">Sobre nosotros</h5>
+            <div style="font-size: 20px;">
+                <ul>
+                  <a href="{% url 'personalizado' %}" style="font-family: Rubik; color: white;">Productos Personalizados</a>
+                </ul>
+                <ul>
+                  <a href="{% url 'contacto' %}" style="font-family: Rubik; color: white;">Contáctanos</a>
+                </ul>
+                <ul>
+                  <a href="{% url 'acerca' %}" style="font-family: Rubik; color: white;">Acerca</a>
+                </ul>
+            </div>
+          </div>
+        </div>
+</div>
+
+<div class="text-center mb-3 mt-3" style="font-family: Pacifico; color: gray;">
+  <h5>© 2022 - Creado por Javiera Venegas  </h5>
+</div>

@@ -1,0 +1,42 @@
+
+.suscribete {
+    background: #c597f5;
+    text-align: center;
+    padding: 100px;
+    color: #380e64;
+}
+
+.newsletter {
+    margin-top: 45px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-weight: 400;
+    color: #380e64;
+    border-color: #380e64;
+}
+
+span {
+    font-family:"Yellowtail";
+}
+
+footer {
+    background: #373a3c;
+    font-family: "Yellowtail";
+    font-size: 30px;
+}
+
+.banner {
+    background: #c597f5;
+    text-align: center;
+    padding: 100px;
+    color: #380e64;
+}
+
+.carousel-inner img {
+    width: 100%;
+    max-height: 460px;
+}
+
+.carousel-inner{
+ height: 200px;
+}

@@ -1,0 +1,42 @@
+{% extends 'base.html' %} 
+{% load static %} 
+
+{% block 'content' %} 
+<div class="container">
+    <h2 class="text-center" style="font-family: Pacifico;">Nuestra Historia</h2>
+
+    <div>
+        <p>OnlyFlans es una empresa enfocada en el mundo de la pastelería y los postres, en especial
+            en la venta de flan, nace en 2021 en santiago de chile como una empresa
+            familiar que pretende entregar productos de calidad a su clientela, estando ubicada en
+            providencia, a pasos del metro Parque Bustamante.</p>
+    </div>
+
+
+    <div class="container col-xs-12 col-lg-12 col-xs-offset-3 tamano mb-5 mt-5" style="width:640px;height:">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="{% static 'imagenes/onlyflans_sucursal.jpeg' %}" class="d-block w-100" alt="slide 1">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="{% static 'imagenes/sucursal_2.jpg' %}" class="d-block w-100" alt="slide 2">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'imagenes/sucursal_3.jpg' %}" class="d-block w-100" alt="slide 3">
+          </div>
+        </div>
+        <a class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </a>
+        <a class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </a>
+      </div>
+    </div>
+
+</div>
+{% endblock %} 
+

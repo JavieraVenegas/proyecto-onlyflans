@@ -1,0 +1,44 @@
+{% extends 'base.html' %} 
+
+{% block 'content' %} 
+
+<div class="container">
+
+    <div class="row">
+        <div class="col mb-4">
+            <div class="banner h-100 p-5 text-purple bg-purple rounded-3">
+                <h2>
+                    ¡Flanes personalidados para toda ocasión!
+                </h2>
+                <p>
+                    Buscas algo más creativo? Que se adapte a la tematica de tu evento? Contactanos! 
+                </p>
+                <a href="{% url 'contacto' %}" class="btn btn-outline-light">
+                    Contactanos
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        {% for personalizado in personalizado %} 
+        <div class="col-6 col-md-3">
+            <div class="card mb-4" style="">
+                <img src="{{ personalizado.image_especial }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        {{ personalizado.name_especial }}
+                    </h5>
+                    <p class="card-text">
+                        {{ personalizado.description_especial }}
+                    </p>
+                </div>
+            </div>
+        </div> 
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %} 
+
